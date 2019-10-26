@@ -1,0 +1,37 @@
+@model Fuel.Models.AddStopRequest
+
+<div class="text-center">
+    <h1 class="display-4"> Adding Fuel Stop </h1>
+</div>
+
+
+
+<a class="btn btn-primary" asp-area="" asp-controller="Fuel" asp-action="Index">Back to Main Menu</a>
+
+<br/>
+
+<form asp-action="AddFuelStop">
+    <div>
+        <div class="form-group">
+            <label asp-for="stopDate" class="control-label" id="stopDate" >Stop Date </label>
+            <input asp-for="stopDate" class="form-control"/>
+            
+       
+        </div>
+        <div class="form-group">
+            <label asp-for="stopAmount" class="control-label" >Amount (Litres)</label>
+            <input asp-for="stopAmount" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="price" class="control-label" >Price (£)</label>
+            <input asp-for="price" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="distanceTravelled" class="control-label"> Distance Travelled (Miles)</label>
+            <input asp-for="distanceTravelled" class="form-control"  />
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Submit" class="btn btn-primary" />
+        </div>
+    </div>
+</form>
